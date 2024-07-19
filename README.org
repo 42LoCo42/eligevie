@@ -1,0 +1,14 @@
+* Simple [[https://wiki.xxiivv.com/site/arvelie.html][Arvelie]] visualizer
+
+To run on NixOS:
+#+begin_src shell
+  nix run github:42loco42/eligevie
+#+end_src
+
+On non-NixOS, use [[https://github.com/nix-community/nixGL][nixGL]]:
+#+begin_src shell
+  NIXPKGS_ALLOW_UNFREE=1 nix run --impure github:nix-community/nixgl \
+    nix run github:42loco42/eligevie
+#+end_src
+
+By default, shows current date. Hold SPACE for demo mode.
