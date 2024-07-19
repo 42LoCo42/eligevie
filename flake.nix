@@ -14,6 +14,10 @@
           buildInputs = with pkgs; [
             raylib
           ];
+
+          CFLAGS = [
+            "-D FONT=${pkgs.iosevka}/share/fonts/truetype/Iosevka-Regular.ttf"
+          ];
         };
 
         devShells.default = pkgs.mkShell {
