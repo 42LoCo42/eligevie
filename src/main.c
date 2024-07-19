@@ -1,7 +1,5 @@
-#include <err.h>
 #include <raylib.h>
 #include <raymath.h>
-#include <stdlib.h>
 #include <time.h>
 
 #define WINDOW_WIDTH 1920
